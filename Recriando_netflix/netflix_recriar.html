@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset=" UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/main.css">
+
+        <!--responsividade-->
+        <link rel="stylesheet" href="style/responsive.css">
+
+        <!--owl css -->
+        <link rel="stylesheet" href="./style/Owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="./style/Owl/owl.theme.default.min.css">
+        <title> NETIFLIX CLONE</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h2 class="logo">NETIFLIX</h2>
+                <nav>
+                 <a href="#">Inicio</a>    
+                 <a href="#">Séries</a>    
+                 <a href="#">Filmes</a>    
+                 <a href="#">Documentários</a>    
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="filme-principal ">
+                <div class="container">
+                    <h3 class="titulo">O GAMBITO DA RAINHA</h3>
+                    <p class="descricao">Durante a Guerra Fria, em um orfanato do Kentucky, uma garota prodígio do xadrez luta contra o vício para se tornar a número um do mundo.</p>
+                    <div class="botoes">
+                        <button  role="button" class="botao" onclick="window.open('https://www.youtube.com/watch?v=cnqV3wsZlpo')">
+                            <i class="fas fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                        <button role="button" class="botao info">
+                                    <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </div>
+                </div>                             
+            </div>
+        </main>
+
+        <div class="carrosel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="./img/mini (1).jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini (2).jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini (3).jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini (4).jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini (5).jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini (6).jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini (7).jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini (8).jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini (9).jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini (10).jpg" alt="" srcset="">
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="https://kit.fontawesome.com/bc32461d73.js" crossorigin="anonymous"></script>
+        <script src="./js/Owl/jquery.min.js"></script>
+        <script src="./js/Owl/owl.carousel.min.js"></script>
+        <script src="./js/Owl/setup.js"></script>
+        <script>
+            $(function(){
+                $(".botao.info").click(function(e) {
+                    window.open('https://www.themoviedb.org/tv/87739-the-queen-s-gambit?language=pt-BR');
+                });
+                });
+        </script>
+
+    </body>
+</html>
